@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="pass.css">
+</head>
+<body>
+    <div class="container " id="margincontainer">
+        <h1 id="headingbigs"><b>password Generator</b></h1>
+        <div class="mydiva">
+            <input readonly placeholder="password class="display"  data-passworddisplay></input>
+            <button class="copybtn" data-copy>
+                <span class="tooltip" data-copymsg></span>
+                <img src="copy.svg" alt="copy" width="23" height="23">
+
+            </button>
+        </div>
+
+        <!--password length section-->
+        <div class="display-container">
+            <p id="pm">Password length</p>
+             <p  id="pm" data-lengthNumber >0</p>
+        </div>
+
+        <!--slider-->
+        <input type="range" min="1" max="20" class="slider" step="1" data-lengthslider>
+
+        <!--checkboxes-->
+        <div class="check">
+            <input type="checkbox" id="uppercase" id="check"></input>
+            <label for="uppercase" >Includes uppercase letters</label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="lowercase"></input>
+            <label for="lowercase">Includes Lowercase Letters </label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="numbers"></input>
+            <label for="Numbers">Includes Numbers</label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="symbols"></input>
+            <label for="Symbols">Includes Symbols</label>
+        </div>
+
+        <!--strength secttion-->
+        <div class="strength-container">
+            <p>Strength</p>
+            <div class="indicator" data-indicator></div>
+        </div>
+        <!--generate password-->
+        <button class="generateButton">Generate password</button>
+
+
+
+
+
+
+    </div>
+
+    <script src="pass.js"></script>
+    
+</body>
+</html>
